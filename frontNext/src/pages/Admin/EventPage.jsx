@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import NavBarAdmin from "../../components/UI/navbar/NavBarAdmin";
-import Login from "../../components/Login";
 import AddEventForm2 from '../../components/AddEventForm2'
 import EventTable from '../../components/EventsTable'
 

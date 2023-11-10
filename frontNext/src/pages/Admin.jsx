@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavBarAdmin from "../components/UI/navbar/NavBarAdmin";
-import Login from "../components/Login";
+import Login from "../components/login";
 import "../styles/Home.module.css";
 
 export default function Admin() {
