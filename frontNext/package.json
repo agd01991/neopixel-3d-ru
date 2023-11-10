@@ -1,0 +1,35 @@
+{
+  "name": "neopixel-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.32",
+    "@types/react-dom": "18.0.11",
+    "axios": "^0.24.0",
+    "cookies-next": "^2.1.1",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-three-fiber": "^6.0.13",
+    "stl-loader": "^1.0.0",
+    "swiper": "^9.2.0",
+    "three": "^0.153.0",
+    "typescript": "5.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  }
+}
