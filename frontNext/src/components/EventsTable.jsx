@@ -16,7 +16,7 @@ export default function EventTable() {
   const fetchEvents = () => {
     axios.get('http://79.174.94.63:3001/api/events')
       .then((response) => {
-        setEvents(response.data.events);
+        setEvents(response.data.events.reverse());
         console.log(response);
       })
       .catch((error) => {
