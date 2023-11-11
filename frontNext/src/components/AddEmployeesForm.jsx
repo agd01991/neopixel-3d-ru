@@ -12,7 +12,7 @@ export default function AddEmployeesForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/employees/register', {
+      const response = await axios.post('http://79.174.94.63:3001/api/employees/register', {
         name,
         email,
         username,

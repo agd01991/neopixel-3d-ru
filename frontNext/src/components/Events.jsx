@@ -16,7 +16,7 @@ export default function Events() {
 	const [token, setToken] = useState(null);
 	const [events, setEvents] = useState([]);
 useEffect(() => {
-		axios.get("http://localhost:3000/api/events", {
+		axios.get("http://79.174.94.63:3001/api/events", {
 			headers: { 'Content-Type': 'application/json', Cookie: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODUzNTY0MDYsInN1YiI6MzF9.VM4s1DxzsNgdUaHQ6fVuJyPm8g704ED4lD5dxkeFx9c` },
 		})
 		  .then((result) => {

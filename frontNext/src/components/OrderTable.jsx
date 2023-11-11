@@ -8,7 +8,7 @@ export default function OrdersTable() {
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/orders")
+    axios.get("http://79.174.94.63:3001/api/orders")
       .then((result) => {
         setOrders(result.data.orders);
         console.log(result);
@@ -16,7 +16,7 @@ export default function OrdersTable() {
   }, []);
 
   const handleStatusChange = (orderId, status) => {
-    axios.put(`http://localhost:3000/api/orders/${orderId}`, { status })
+    axios.put(`http://79.174.94.63:3001/api/orders/${orderId}`, { status })
       .then((result) => {
         console.log(result);
         // Update the order status in the local state

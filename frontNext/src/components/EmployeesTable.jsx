@@ -10,7 +10,7 @@ export default function EmployeesTable() {
   }, []);
 
   const fetchEmployees = () => {
-    axios.get('http://localhost:3000/api/employees')
+    axios.get('http://79.174.94.63:3001/api/employees')
       .then((response) => {
         setEmployees(response.data.employees);
         console.log(response);
@@ -22,7 +22,7 @@ export default function EmployeesTable() {
 
   const deleteEmployees = (employeesId) => {
     axios
-      .delete(`http://localhost:3000/api/employees/${employeesId}`)
+      .delete(`http://79.174.94.63:3001/api/employees/${employeesId}`)
       .then((response) => {
         setEmployees((prevEmployees) =>
           prevEmployees.filter((employees) => employees.id !== employeesId)
@@ -40,7 +40,7 @@ export default function EmployeesTable() {
 
   const updateEmployees = () => {
     axios
-      .put(`http://localhost:3000/api/employees/${editEmployees.id}`, editEmployees)
+      .put(`http://79.174.94.63:3001/api/employees/${editEmployees.id}`, editEmployees)
       .then((response) => {
         setEmployees((prevEmployees) =>
           prevEmployees.map((employees) => (employees.id === editEmployees.id ? editEmployees : employees))
