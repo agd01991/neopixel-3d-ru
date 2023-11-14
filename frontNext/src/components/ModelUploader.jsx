@@ -17,7 +17,7 @@ export default function ModelUploader() {
     const formData = new FormData();
     formData.append('stlFile', selectedFile);
 
-    fetch('http://neopixel3d.ru/api/events/upload-stl', {
+    fetch('http://79.174.94.63:3001/api/events/upload-stl', {
       method: 'POST',
       body: formData,
     })

@@ -27,7 +27,7 @@ export default function AddConsult() {
     }
 
     try {
-      const response = await fetch('http://neopixel3d.ru/api/consults', {
+      const response = await fetch('http://79.174.94.63:3001/api/consults', {
         method: 'POST',
         body: JSON.stringify({ email, name, tel }),
         headers: {

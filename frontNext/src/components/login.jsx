@@ -8,7 +8,7 @@ export default function Login({ setIsAuthenticated }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://neopixel3d.ru/api/employees/getrole", {
+    const response = await fetch("http://79.174.94.63:3001/api/employees/getrole", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
