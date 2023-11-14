@@ -16,7 +16,7 @@ export default function Events() {
 	const [token, setToken] = useState(null);
 	const [events, setEvents] = useState([]);
 useEffect(() => {
-		axios.get("https://neopixel3d.ru/api/events", {
+		axios.get("http://neopixel3d.ru/api/events", {
 			headers: { 'Content-Type': 'application/json', Cookie: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODUzNTY0MDYsInN1YiI6MzF9.VM4s1DxzsNgdUaHQ6fVuJyPm8g704ED4lD5dxkeFx9c` },
 		})
 		  .then((result) => {
