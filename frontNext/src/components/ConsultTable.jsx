@@ -8,7 +8,7 @@ export default function ConsultsTable() {
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    axios.get("http://79.174.94.63:3001/api/consults")
+    axios.get("http://neopixel3d.ru/api/consults")
       .then((result) => {
         setConsults(result.data.consults);
         console.log(result);
@@ -16,7 +16,7 @@ export default function ConsultsTable() {
   }, []);
 
   const handleStatusChange = (consultId, status) => {
-    axios.put(`http://79.174.94.63:3001/api/consults/${consultId}`, { status })
+    axios.put(`http://neopixel3d.ru/api/consults/${consultId}`, { status })
       .then((result) => {
         console.log(result);
         // Update the consult status in the local state

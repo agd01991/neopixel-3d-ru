@@ -10,7 +10,7 @@ export default function AddEventForm2() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const eventData = { title, description, date, img };
-    fetch('http://79.174.94.63:3001/api/events', {
+    fetch('http://neopixel3d.ru/api/events', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

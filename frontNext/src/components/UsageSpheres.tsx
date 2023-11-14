@@ -40,7 +40,7 @@ export default function UsageSpheresMob() {
                     <h1 className='text-[25px] leading-[27px] mt-2 laptop:mt-8'>Ruby (R Lite / R Pro)</h1>
                     <div className='flex items-center justify-between text-[18px] leading-[22px] mt-4 laptop:mt-10'>
                         <div className='underline cursor-pointer'><Link href="/Printers/PrinterR">Подробнее</Link></div>
-                        <button className='px-5 py-1 hover:bg-[#26AAE1] border border-[#26AAE1] rounded-full cursor-pointer'><Link href="//Printers/PrinterR#orderR">Заказать</Link></button>
+                        <button className='px-5 py-1 hover:bg-[#26AAE1] border border-[#26AAE1] rounded-full cursor-pointer'><Link href="/Printers/PrinterR#orderR">Заказать</Link></button>
                     </div>
                 </div>
                 <div className='p-3 laptop:p-7 w-[290px] h-[250px] shadow-2xl laptop:w-[420px] laptop:h-full laptop:shadow-2xl'>

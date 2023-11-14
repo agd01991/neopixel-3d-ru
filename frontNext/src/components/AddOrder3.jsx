@@ -27,7 +27,7 @@ export default function AddOrder3() {
     }
 
     try {
-      const response = await fetch('http://79.174.94.63:3001/api/orders', {
+      const response = await fetch('http://neopixel3d.ru/api/orders', {
         method: 'POST',
         body: JSON.stringify({ email, name, tel, printername, description }),
         headers: {
@@ -49,7 +49,7 @@ export default function AddOrder3() {
   return (
     <div className='bg-[#171616] py-[50px] laptop:py-[100px]'>
       <div className='text-white flex mx-auto p-[10px] justify-center laptop:max-w-7xl laptop:mb-[140px]'>
-        <div className='text-lg text-white font-HelveticaNeueCyr font-semibold text-center mb-6 laptop:text-5xl'>ОФОРМИТЬ ПРЕДЗАКАЗ НА ПРИНТЕР SAPPHIRE</div>
+        <div className='text-lg text-white font-HelveticaNeueCyr font-semibold text-center mb-6 laptop:text-5xl' name="orderB">ОФОРМИТЬ ПРЕДЗАКАЗ НА ПРИНТЕР SAPPHIRE</div>
       </div>
       <div className='laptop:flex laptop:justify-center'>
         <form className='mx-4' onSubmit={handleSubmit}>
