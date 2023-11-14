@@ -19,7 +19,7 @@ class AddUserForm extends Component {
       const { name, email, username, password } = this.state;
   
       try {
-        const response = await fetch('http://79.174.94.63:3001/api/register', {
+        const response = await fetch('https://neopixel3d.ru/api/register', {
           method: 'POST',
           body: JSON.stringify({ name, email, username, password }),
           headers: {

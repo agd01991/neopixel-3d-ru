@@ -27,7 +27,7 @@ export default function AddOrder3() {
     }
 
     try {
-      const response = await fetch('http://79.174.94.63:3001/api/orders', {
+      const response = await fetch('https://neopixel3d.ru/api/orders', {
         method: 'POST',
         body: JSON.stringify({ email, name, tel, printername, description }),
         headers: {

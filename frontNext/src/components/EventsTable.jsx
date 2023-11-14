@@ -14,7 +14,7 @@ export default function EventTable() {
   }, []);
 
   const fetchEvents = () => {
-    axios.get('http://79.174.94.63:3001/api/events')
+    axios.get('https://neopixel3d.ru/api/events')
       .then((response) => {
         setEvents(response.data.events.reverse());
         console.log(response);
@@ -26,7 +26,7 @@ export default function EventTable() {
 
   const deleteEvent = (eventId) => {
     axios
-      .delete(`http://79.174.94.63:3001/api/events/${eventId}`)
+      .delete(`https://neopixel3d.ru/api/events/${eventId}`)
       .then((response) => {
         setEvents((prevEvents) =>
           prevEvents.filter((event) => event.id !== eventId)
@@ -44,7 +44,7 @@ export default function EventTable() {
 
   const updateEvent = () => {
     axios
-      .put(`http://79.174.94.63:3001/api/events/${editEvent.id}`, editEvent)
+      .put(`https://neopixel3d.ru/api/events/${editEvent.id}`, editEvent)
       .then((response) => {
         setEvents((prevEvents) =>
           prevEvents.map((event) => (event.id === editEvent.id ? editEvent : event))
