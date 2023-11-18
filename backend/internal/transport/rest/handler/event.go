@@ -172,7 +172,7 @@ func (h *EventHandler) UploadSTL(c *gin.Context) {
 		return
 	}
 
-	cmd := exec.Command("py", "calculate_volume.py", filePath)
+	cmd := exec.Command("python3", "calculate_volume.py", filePath)
 	output, err := cmd.Output()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to calculate volume"})
