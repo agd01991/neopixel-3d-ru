@@ -53,7 +53,7 @@ def calculate_volume(stl_file_path):
 
 
 # Получаем путь к файлу STL из аргументов командной строки
-stl_file_path = "C:\\untitled1.stl" # sys.argv[1]
+stl_file_path =  sys.argv[1]
 # Вычисляем объем модели
 model_volume = calculate_volume(stl_file_path)
 print(model_volume)
