@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-          <head>
+          <Head>
       <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -21,7 +21,7 @@ export default function Document() {
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/93081907" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-    </head>
+    </Head>
       <body>
         <Main />
         <NextScript />
