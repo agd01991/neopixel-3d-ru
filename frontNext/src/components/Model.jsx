@@ -36,10 +36,16 @@ const Model = () => {
     const loader = new STLLoader();
     loader.load('/testmodel.stl', geometry => {
       console.log(geometry);
-      const material = new THREE.MeshPhongMaterial({ color: 0xffffff }); // Используем MeshPhongMaterial для отображения теней
+      const material = new THREE.MeshPhongMaterial({ color: 0x26AAE1  }); // Используем MeshPhongMaterial для отображения теней
       const mesh = new THREE.Mesh(geometry, material);
       mesh.scale.set(0.1, 0.1, 0.1);
       mesh.castShadow = true; // Включение отбрасывания теней
+      mesh.position.set(0, 0, 0);
+
+      // Устанавливаем вращение
+      mesh.rotation.y = Math.PI / 4; // Поворот на 45 градусов вокруг оси Y
+      mesh.rotation.x = Math.PI / 6; // Небольшой наклон вокруг оси X
+    
       scene.add(mesh);
 
       // Вывод информации о модели в консоль
@@ -53,7 +59,7 @@ const Model = () => {
     controls.rotateSpeed = 0.5;
 
     const light = new THREE.DirectionalLight(0xffffff, 1); // Добавление направленного света
-    light.position.set(0, 10, 0);
+    light.position.set(5, 2, 5);
     light.castShadow = true; // Включение отбрасывания теней от источника света
     scene.add(light);
 
